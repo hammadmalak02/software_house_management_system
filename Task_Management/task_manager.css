@@ -1,0 +1,65 @@
+/* Task Management Container */
+.task-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #28a745;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.task-container h2 {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#task-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#task-form label {
+    font-size: 14px;
+    color: #333;
+}
+
+#task-form input, #task-form select, #task-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#task-form button {
+    grid-column: 1 / span 2;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background-color: #218838;
+}
+
+#task-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#task-table th, #task-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#task-table th {
+    background-color: #28a745;
+    color: white;
+}

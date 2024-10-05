@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="task_manager.css">
+</head>
+<body>
+    <!-- Navbar can be placed here -->
+
+    <!-- Task Management Section -->
+    <div class="task-container">
+        <h2>Task Management</h2>
+        <form id="task-form">
+            <label for="task_name">Task Name:</label>
+            <input type="text" id="task_name" name="task_name" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+            
+            <label for="assigned_to">Assign To:</label>
+            <select id="assigned_to" name="assigned_to">
+                <!-- Options for team members -->
+                <option value="member1">Hammad-Ur-Rehman</option>
+                <option value="member2">Asad Khan</option>
+                <option value="member3">Muzammil Qureshi</option>
+            </select>
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline">
+            
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="pending">Pending</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select>
+            
+            <button type="submit">Add Task</button>
+        </form>
+        
+        <h3>Task List</h3>
+        <table id="task-table">
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Description</th>
+                    <th>Assigned To</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Task rows will go here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="task_manager.js"></script>
+</body>
+</html>
